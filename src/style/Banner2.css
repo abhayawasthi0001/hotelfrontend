@@ -64,6 +64,13 @@
     z-index: 10;
   }
 }
+@media (max-width: 697px) {
+  .banner-text {
+    position: absolute;
+    top: 116rem;
+    z-index: 10;
+  }
+}
 @media (max-width: 376px) {
   .banner-text-content p {
     font-size: 80%;

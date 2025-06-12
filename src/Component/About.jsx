@@ -15,7 +15,7 @@ export default function About() {
     <div className="about">
       <h1 className="aboutheading"> &#8547;</h1>
       <h2 className="aboutheading2">
-        Exceptional gastronomy <br /> served in elegant spaces.
+        Exceptional gastronomy <br />served in elegant spaces.
       </h2>
       <div className="aboutus">
         <section>

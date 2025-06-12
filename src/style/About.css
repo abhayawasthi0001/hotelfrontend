@@ -12,6 +12,7 @@
   margin-bottom: 50px;
 }
 .aboutheading2 {
+  text-align: center;
   color: black;
   font-size: 50px;
 }
@@ -40,7 +41,6 @@ section {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
 }
 section::-webkit-scrollbar {
   display: none;
@@ -89,7 +89,7 @@ section img {
     margin: 50px auto;
   }
   .aboutus > section {
-    width: 60%;
+    width: 80%;
     margin-top: 7rem;
   }
   .aboutus div {
@@ -110,5 +110,14 @@ section img {
   }
   .aboutdetail div {
     width: 100%;
+  }
+  .aboutheading2 {
+    font-size: 30px;
+  }
+  .aboutus div h2 {
+    font-size: 20px;
+  }
+  .aboutus div p {
+    font-size: 15px;
   }
 }
