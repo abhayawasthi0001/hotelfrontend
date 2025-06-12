@@ -1,0 +1,137 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(58, 106, 137);
+  position: absolute;
+}
+.leftcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  padding: 100px 20px;
+  transition: 0.5s ease-in-out;
+}
+.leftcontent:hover {
+  width: 65%;
+}
+
+.left1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30rem;
+  align-items: left;
+}
+.left1 h2 {
+  font-size: 25px;
+  color: white;
+}
+.left1 h2 b {
+  font-size: 30px;
+  margin-left: 50px;
+  transition: 0.5s ease-in-out;
+}
+.left1 h2 b:hover {
+  font-size: 35px;
+}
+.left2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20rem;
+  align-items: left;
+}
+.left2 h2 {
+  font-size: 25px;
+  color: white;
+}
+.left2 h3 {
+  font-size: 14px;
+  color: rgb(207, 194, 194);
+}
+.left2 h3:hover {
+  color: white;
+}
+
+/* right part */
+.rightcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: auto;
+  background-color: rgba(27, 61, 93, 255);
+  padding: 100px 20px;
+  transition: 0.5s ease-in-out;
+}
+.rightcontent:hover {
+  width: 45%;
+}
+.rightcontent h1 {
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+}
+.rightcontent h2 {
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+}
+.rightcontent div {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#icon {
+  color: rgb(207, 194, 194);
+}
+.copyright {
+  font-size: 20px;
+  color: white;
+  margin-top: 37px;
+}
+@media (max-width: 1260px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(58, 106, 137);
+  }
+  .rightcontent {
+    width: 100%;
+  }
+  .leftcontent {
+    width: 100%;
+  }
+  .rightcontent:hover,
+  .leftcontent:hover {
+    width: 100%;
+  }
+}
+@media (max-width: 1260px) {
+  .leftcontent {
+    display: flex;
+    flex-direction: column;
+  }
+  .left1,
+  .left2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* @media (max-width: 1254px) {
+  .footer {
+    bottom: -500rem;
+  }
+}
+@media (max-width: 976px) {
+  .footer {
+    bottom: -570rem;
+  }
+} */

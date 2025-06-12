@@ -1,0 +1,135 @@
+.coperate-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.coperate-events h1 {
+  color: rgb(207, 194, 194);
+  font-size: 3rem;
+  position: relative;
+  top: 150px;
+  border: 1px solid #333;
+  padding: 20px;
+}
+.coperate-events h2 {
+  color: rgb(207, 194, 194);
+  font-size: 10rem;
+  width: 80%;
+  position: absolute;
+  margin-top: -3rem;
+}
+.coperate-events img {
+  width: 80%;
+  height: 40rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* white card */
+.detailcards {
+  height: 25rem;
+  width: 30%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 30rem;
+}
+.detailcards::-webkit-scrollbar {
+  display: none;
+}
+
+.transparent {
+  width: 100%;
+  height: 30rem;
+  background-color: rgba(255, 255, 255, 0.77);
+  padding: 10px;
+  border: 1px solid white;
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+}
+.white {
+  /* width: 100%;
+  height: 100%; */
+  background-color: white;
+  padding: 10px;
+}
+.whitecard {
+  /* height: 100%;
+  width: 100%; */
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.whitecard h3 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.whitecard p {
+  color: rgb(115, 115, 115);
+  font-size: 20px;
+  font-weight: 500;
+}
+.whitecard button {
+  color: black;
+  border: 1px solid black;
+  width: 30%;
+  padding: 10px 20px;
+  margin-left: 35%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.whitecard button:hover {
+  background-color: rgba(33, 71, 102, 255);
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  padding: 0;
+}
+@media (max-width: 877px) {
+  .coperate-events h2 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 552px) {
+  .coperate-events h2 {
+    font-size: 3rem;
+  }
+  .detailcards {
+    height: 25rem;
+    width: 70%;
+  }
+  .whitecard h3 {
+    font-size: 20px;
+  }
+  .whitecard p {
+    font-size: 10px;
+  }
+  .whitecard button {
+    width: auto;
+    padding: 10px 20px;
+    margin-left: 2%;
+    font-size: 10px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 922px) {
+  .detailcards {
+    height: 25rem;
+    width: 50%;
+  }
+  .transparent {
+    width: 100%;
+    height: auto;
+  }
+}

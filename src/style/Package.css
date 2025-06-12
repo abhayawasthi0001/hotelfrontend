@@ -1,0 +1,30 @@
+.packageheading {
+  font-size: 35px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.packagerow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  width: 100%;
+  margin-top: 40px;
+}
+#hr{
+  color:rgb(188, 188, 188);
+  height: 2px;
+  background-color: rgb(188, 188, 188);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 674px) {
+  .packagerow {
+    display: flex;
+    flex-direction: column;
+  }
+}

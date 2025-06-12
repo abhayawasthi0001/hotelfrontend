@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.fullnav {
+  text-align: center;
+}
+
+.navbarmain {
+  background-color: rgba(135, 207, 235, 0.173);
+  padding: 5px 0px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0rem;
+  z-index: 10;
+}
+
+.nav-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+#top_mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+#top_mid > h2 {
+  font-size: 20px;
+  color: white;
+}
+
+#menu,
+#booking {
+  background-color: rgba(3, 37, 64, 255);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.menu2 {
+  display: none;
+}
+
+#menu:hover,
+#booking:hover {
+  background-color: #3b82f6;
+}
+
+#logo {
+  padding: 0%;
+  margin: 0%;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.nav-buttom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 0px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.nav-buttom > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.nav-buttom > ul > li {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 15px;
+}
+.headingdiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5px;
+  position: absolute;
+  top: 15rem;
+  z-index: 10;
+}
+.headingdiv > h1 {
+  color: white;
+  font-size: 4rem;
+}
+.headingdiv > h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 848px) {
+  .navbarmain {
+    margin: 0%;
+  }
+  #top_mid > h2 {
+    display: none;
+  }
+
+  /* --------------------nav-bottom------------------------ */
+
+  .nav-buttom {
+    display: none;
+  }
+
+  .nav-buttom2 > ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu1 {
+    display: none;
+  }
+  .menu2 {
+    display: block;
+  }
+
+}

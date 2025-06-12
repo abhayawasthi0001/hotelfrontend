@@ -1,0 +1,76 @@
+.fullbanner2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.banner2-wrapper {
+  position: relative;
+  width: 80%;
+}
+
+.banner2-carousel {
+  overflow: hidden;
+}
+
+.banner2-img {
+  max-height: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner2-prev,
+.banner2-next {
+  filter: brightness(80%);
+}
+
+/* card */
+.banner-text {
+  background-color: rgb(207, 194, 194);
+  padding: 5px;
+  border: 1px solid white;
+  position: absolute;
+  top: 117rem;
+  z-index: 10;
+}
+.whitepage {
+  background-color: white;
+  padding: 10px;
+}
+.banner-text-content {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner-text-content p {
+  font-size: 220%;
+}
+@media (max-width: 1387px) {
+  .banner-text-content p {
+    font-size: 100%;
+  }
+}
+@media (max-width: 736px) {
+  .banner-text {
+    position: absolute;
+    top: 110rem;
+    z-index: 10;
+  }
+}
+@media (max-width: 376px) {
+  .banner-text-content p {
+    font-size: 80%;
+  }
+  .banner-text {
+    position: absolute;
+    top: 115rem;
+    z-index: 10;
+  }
+}
