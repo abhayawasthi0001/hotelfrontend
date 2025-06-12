@@ -6,21 +6,21 @@ import "../style/Banner2.css";
 
 export default function Banner2() {
   useEffect(() => {
-    // Load Bootstrap CSS dynamically
+
     const bootstrapCSS = document.createElement("link");
     bootstrapCSS.rel = "stylesheet";
     bootstrapCSS.href =
       "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
     document.head.appendChild(bootstrapCSS);
 
-    // Load Bootstrap JS dynamically
+
     const bootstrapScript = document.createElement("script");
     bootstrapScript.src =
       "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js";
     bootstrapScript.defer = true;
     document.body.appendChild(bootstrapScript);
 
-    // Cleanup function to remove Bootstrap files when component unmounts
+
     return () => {
       document.head.removeChild(bootstrapCSS);
       document.body.removeChild(bootstrapScript);
@@ -59,7 +59,7 @@ export default function Banner2() {
             </div>
           </div>
 
-          {/* Carousel controls */}
+        
           <button
             className="carousel-control-prev banner2-prev"
             type="button"
